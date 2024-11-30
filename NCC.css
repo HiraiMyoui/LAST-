@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Universal reset for consistent styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(24, 25, 27);}
+
+/* General Navbar Styling */
+.navbar {
+    background-color: rgb(37, 40, 43);
+    font-family: 'Bebas Neue', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar .Logo {
+    color: white;
+    font-size: clamp(2vh, 3vw, 4vh);
+    text-decoration: none;
+}
+
+/* Navbar Links Styling */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px; /* Space between links */
+    margin: 0;
+    padding: 1%;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: clamp(1rem, 2vw + 1rem, 1.5rem);
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f0a500;
+}
+
+/* Hamburger Menu Styling */
+.hamburger {
+    display: none; /* Hidden on large screens */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/* Responsive Styling for Small Screens */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex; /* Show hamburger menu on small screens */
+    }
+
+    .nav-links {
+        display: none; /* Hide links by default */
+        flex-direction: column; /* Stack links vertically */
+        width: 100%;
+        background-color: rgb(37, 40, 43);
+        position: absolute;
+        top: 60px; /* Below the navbar */
+        left: 0;
+        padding: 10px 0;
+        z-index: 9;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when active */
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Add spacing between links */
+        text-align: center; /* Center text */
+    }
+}
+
+.GTP {
+    width: 100%;
+    height: clamp(50vh, 650px, 80vh);
+    background-image: url(imgs/diet-concept-with-female-scientist-healthy-food.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    margin: 0 auto; /* Ensure container is centered horizontally */
+}
+.Tittle {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2rem, 10vw, 100px);
+    text-shadow: 0.2vw 0.2vw 0.5vw rgba(0, 0, 0, 0.85);
+    color: aliceblue;
+    text-align: center; /* Ensure text is centered */
+    margin-bottom: 20px; /* Add spacing below the title */
+}
+
+.btnContact a {
+    text-decoration: none;
+    color: #f0a500;
+    font-size: 1.2rem;
+    border: 2px solid #f0a500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center; /* Ensure link is centered */
+}
+
+.btnContact a:hover {
+    background-color: #f0a500;
+    color: #ffffff;
+}
+.Paragraph{
+    width: 100%; /* Smaller width values */
+    height: clamp(24vh, 320px, 40vh);
+   background-color: rgb(23, 17, 17);
+    background-position: center;
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(1.5vh, 4vw, 4.5vh); /* Smaller size using vh and vw */
+    text-shadow: 0.1vw 0.1vw 0.3vw rgba(0, 0, 0, 0.85);
+    color: aliceblue;
+    text-align: center; /* Ensure text is centered */
+    padding: 2%;
+   
+}
+.why{
+    width: 100%; /* Smaller width values */
+    height: clamp(50vh, 650px, 80vh);
+    background-image: url(imgs/wallpaperflare.com_wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(1.5vh, 4vw, 4.5vh); /* Smaller size using vh and vw */
+    text-shadow: 0.1vw 0.1vw 0.3vw rgba(0, 0, 0, 1.00);
+    color: rgb(255, 255, 255);
+    text-align: center; /* Ensure text is centered */
+    padding: 2%;
+     
+}
+.Visit{
+    width: 100%; /* Smaller width values */
+    height: clamp(24vh, 320px, 40vh);
+   background-color: rgb(23, 17, 17);
+    background-position: center;
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(1.5vh, 4vw, 4.5vh); /* Smaller size using vh and vw */
+    text-shadow: 0.1vw 0.1vw 0.3vw rgba(0, 0, 0, 0.85);
+    color: aliceblue;
+    text-align: center; /* Ensure text is centered */
+    padding: 2%;
+}
+/* Media query for smaller screens (half-screen laptop mode) */
+@media screen and (max-width: 1024px) {
+    .Tittle {
+        font-size: clamp(1.5rem, 4vw, 60px); /* Adjusted to make the title text smaller */
+    }
+
+    .Paragraph {
+        font-size: clamp(1rem, 3vw, 3.5vh); /* Adjusted to make paragraph text smaller */
+    }
+
+    .why {
+        font-size: clamp(1rem, 3vw, 4vh); /* Adjusted to make the text smaller */
+    }
+
+    .Visit {
+        font-size: clamp(1rem, 3vw, 3.5vh); /* Adjusted to make visit section text smaller */
+    }
+}
+
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 2%; /* Responsive padding */
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: clamp(180px, 20vw, 300px); /* Responsive min width */
+    margin-right: clamp(10px, 1vw, 20px); /* Responsive margin */
+  }
+  
+  .footer-section h3 {
+    font-size: clamp(1rem, 2vw + 0.5rem, 1.5rem); /* Responsive heading font size */
+    margin-bottom: clamp(5px, 0.5vw, 10px); /* Responsive margin */
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section li {
+    margin-bottom: clamp(3px, 0.5vw, 5px); /* Responsive item margin */
+  }
+  
+  .footer-section a {
+    color: #fff;
+    text-decoration: none;
+    font-size: clamp(0.875rem, 1vw + 0.25rem, 1.125rem); /* Responsive link font size */
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-info {
+    flex: 1;
+    min-width: clamp(200px, 25vw, 400px); /* Responsive min width */
+    margin-top: clamp(10px, 1vw, 20px); /* Responsive top margin */
+  }
+  
+  .footer-info p {
+    font-size: clamp(0.75rem, 1vw + 0.25rem, 1rem); /* Responsive paragraph font size */
+    margin-bottom: clamp(5px, 0.5vw, 10px); /* Responsive margin */
+  }
+  
+  .footer-info a {
+    color: #fff;
+    text-decoration: none;
+    font-size: clamp(0.875rem, 1vw + 0.25rem, 1.125rem); /* Responsive link font size */
+  }
+  
+  .footer-info a:hover {
+    text-decoration: underline;
+  }
+  #preloader{
+    background: #2a2826 url(imgs/loader.gif);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+  }
